@@ -1,0 +1,79 @@
+<!-- boilerplate stuff LN 1-8 don't mess with unless changing title or adding a link to a js file.-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Do more better - Made by Yours Truely Mason Baker</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--the code below is to add the favicon(the little icon you see at the top of the tab when on a website)-->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Jump To Top</button>
+    <div class="banner">
+      <section class="one" href="#Top"><div class="navbar">
+        <img src="Images/logo.png" class="logo"/>
+        <!--nav bar buttons are below. Href is used to be able to add anchor points to other parts of
+        the website. -->
+        <ul>
+          <li><a href="#Shopping">Shopping 🛍️</a></li>
+          <li><a href="#ContactUs">Contact us ☎️</a></li>
+          <li><a href="#AboutUs">About us 📃</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <h1>"DO MORE BETTER." - JASON BAKER</h1>
+        <p>
+          a small clothing brand selling shirts that say "do more better." this
+          quote was said after our last football game of 2022 and reminded us
+          <br />
+          that next year we will try our best to improve.
+        </p>
+        <div>
+          <button
+            type="button"
+            onclick="window.open('https://www.facebook.com/pottervillepublicschools','_blank')"
+          >
+            <span></span>FACEBOOK PAGE
+          </button>
+        </div>
+      <!--So uhh the next part below this basically just makes the shopping page, contanct page, and 
+      about us all different so that you can get the auto scrolling for shopping buttons and stuff, etc.-->
+      </section>
+
+      <section class="two" id="Shopping"><h1>shopping page</h1></section>
+      <section class="three" id="ContactUs"><h1>contact info page</h1></section>
+      <section class="four" id="AboutUs"><h1>about the baker family and potterville page</h1></section>
+    </div>
+    <script>
+      // grabs the html element in js to be able to use it in the scripts. BUTTON ON LN 10, COL 5
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 800px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+// Shows the button when scrolled past 800 px and hides it if not.
+function scrollFunction() {
+  if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+    </script>
+  </body>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+    rel="stylesheet"
+  />
+</html>
